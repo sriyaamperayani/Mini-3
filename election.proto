@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+service ElectionService {
+  rpc Heartbeat(HeartbeatRequest) returns (HeartbeatResponse);
+  rpc RequestVote(VoteRequest) returns (VoteResponse);
+  rpc WorkRequest(WorkRequestMessage) returns (WorkAssignment);
+}
+
+message HeartbeatRequest {
+  string node_id = 1;
+  float score = 2;
+}
+
+message HeartbeatResponse {
+  bool success = 1;
+}
+
+message VoteRequest {
+  string candidate_id = 1;
+  float candidate_score = 2;
+}
+
+message VoteResponse {
+  bool vote_granted = 1;
+}
+
+message WorkRequestMessage {
+  string requester_id = 1;
+}
+
+message WorkAssignment {
+  string assigned_to = 1;
+}
