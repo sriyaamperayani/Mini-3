@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x65lection.proto\"2\n\x10HeartbeatRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x02\"$\n\x11HeartbeatResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"<\n\x0bVoteRequest\x12\x14\n\x0c\x63\x61ndidate_id\x18\x01 \x01(\t\x12\x17\n\x0f\x63\x61ndidate_score\x18\x02 \x01(\x02\"$\n\x0cVoteResponse\x12\x14\n\x0cvote_granted\x18\x01 \x01(\x08\"*\n\x12WorkRequestMessage\x12\x14\n\x0crequester_id\x18\x01 \x01(\t\"%\n\x0eWorkAssignment\x12\x13\n\x0b\x61ssigned_to\x18\x01 \x01(\t2\xa6\x01\n\x0f\x45lectionService\x12\x32\n\tHeartbeat\x12\x11.HeartbeatRequest\x1a\x12.HeartbeatResponse\x12*\n\x0bRequestVote\x12\x0c.VoteRequest\x1a\r.VoteResponse\x12\x33\n\x0bWorkRequest\x12\x13.WorkRequestMessage\x1a\x0f.WorkAssignmentb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0e\x65lection.proto\"2\n\x10HeartbeatRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\t\x12\r\n\x05score\x18\x02 \x01(\x02\"$\n\x11HeartbeatResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"<\n\x0bVoteRequest\x12\x14\n\x0c\x63\x61ndidate_id\x18\x01 \x01(\t\x12\x17\n\x0f\x63\x61ndidate_score\x18\x02 \x01(\x02\"$\n\x0cVoteResponse\x12\x14\n\x0cvote_granted\x18\x01 \x01(\x08\"*\n\x12WorkRequestMessage\x12\x14\n\x0crequester_id\x18\x01 \x01(\t\"6\n\x0eWorkAssignment\x12\x13\n\x0b\x61ssigned_to\x18\x01 \x01(\t\x12\x0f\n\x07task_id\x18\x02 \x01(\t2\xa6\x01\n\x0f\x45lectionService\x12\x32\n\tHeartbeat\x12\x11.HeartbeatRequest\x1a\x12.HeartbeatResponse\x12*\n\x0bRequestVote\x12\x0c.VoteRequest\x1a\r.VoteResponse\x12\x33\n\x0bWorkRequest\x12\x13.WorkRequestMessage\x1a\x0f.WorkAssignmentb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -42,7 +42,7 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_WORKREQUESTMESSAGE']._serialized_start=208
   _globals['_WORKREQUESTMESSAGE']._serialized_end=250
   _globals['_WORKASSIGNMENT']._serialized_start=252
-  _globals['_WORKASSIGNMENT']._serialized_end=289
-  _globals['_ELECTIONSERVICE']._serialized_start=292
-  _globals['_ELECTIONSERVICE']._serialized_end=458
+  _globals['_WORKASSIGNMENT']._serialized_end=306
+  _globals['_ELECTIONSERVICE']._serialized_start=309
+  _globals['_ELECTIONSERVICE']._serialized_end=475
 # @@protoc_insertion_point(module_scope)

@@ -30,4 +30,5 @@ message WorkRequestMessage {
 
 message WorkAssignment {
   string assigned_to = 1;
+  string task_id = 2; // 👈 NEW: task identifier
 }
