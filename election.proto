@@ -4,6 +4,7 @@ service ElectionService {
   rpc Heartbeat(HeartbeatRequest) returns (HeartbeatResponse);
   rpc RequestVote(VoteRequest) returns (VoteResponse);
   rpc WorkRequest(WorkRequestMessage) returns (WorkAssignment);
+  rpc AssignTask(TaskMessage) returns (Ack);
 }
 
 message HeartbeatRequest {
@@ -13,6 +14,7 @@ message HeartbeatRequest {
 
 message HeartbeatResponse {
   bool success = 1;
+  string message = 2;
 }
 
 message VoteRequest {
@@ -30,5 +32,14 @@ message WorkRequestMessage {
 
 message WorkAssignment {
   string assigned_to = 1;
-  string task_id = 2; // 👈 NEW: task identifier
+  string task_id = 2;
+}
+
+message TaskMessage {
+  string task_id = 1;
+}
+
+message Ack {
+  string status = 1;
+  string message = 2;
 }
