@@ -106,14 +106,3 @@ chmod +x start_servers.sh
 chmod +x stop_servers.sh
 ./stop_servers.sh
 ```
-
----
-
-## 📈 Metrics & Logs
-
-- Each node logs:
-  - Its score and resource metrics
-  - Election events
-  - Task assignment and completion
-  - Work steal attempts
-- Logs include heartbeat checks and failure simulations
