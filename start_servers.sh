@@ -3,7 +3,6 @@
 # Clear previous PID file if exists
 rm -f server_pids.txt
 
-# Start 5 nodes and save their PIDs
 python3 server.py node1 50051 localhost:50052 localhost:50053 localhost:50054 localhost:50055 &
 echo $! >> server_pids.txt
 
